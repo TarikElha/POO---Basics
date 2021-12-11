@@ -9,6 +9,24 @@ require_once "MotorWay.php";
 require_once "ResidentialWay.php";
 require_once "PedestrianWay.php";
 
+require_once "Speedometer.php";
+
+//En dehors de la classe, en faisant echo Speedometer::convertKmToMiles(10); la méthode retournera 6,21
+echo Speedometer::convertKmToMiles(10);
+
+
+/*
+$car = new Car("blue", 5, "Diesel");
+$bike = new Bicycle('blue', 1);
+
+echo "Car light switchOn : ".$car->switchOn()."\n";
+echo "Car light switchOff : ".$car->switchOff()."\n";
+echo "Bike light switchOn with speed less 10km/h : ".$bike->switchOn()."\n";
+$bike->forward();
+echo "Bike light switchOn with speed over 10km/h : ".$bike->switchOn()."\n";
+echo "Bike light switchOff : ".$bike->switchOff()."\n";
+
+
 $car = new Car("blue", 5, "Diesel");
 
 try {
@@ -19,7 +37,7 @@ try {
     echo "Ma voiture roule comme un donut";
 }
 
-/*
+
 //creation des Véhicules
 $car = new Car("blue", 5, "Diesel");
 

@@ -2,6 +2,6 @@
 
 interface LightableInterface
 {
-    public function switchOn();
-    public function switchOff();
+    public function switchOn() :bool;
+    public function switchOff() : bool;
 }
